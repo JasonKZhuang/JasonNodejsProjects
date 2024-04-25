@@ -1,0 +1,51 @@
+###
+POST http://localhost:3000/api/v1/books
+Content-Type: application/json
+
+{
+  "name": "Book Name 6",
+  "description": "Book description 6"
+}
+
+###
+GET http://localhost:3000/api/v1/books/
+
+
+###
+GET http://localhost:3000/api/v1/books/2
+
+
+###
+PATCH http://localhost:3000/api/v1/books/4
+Content-Type: application/json
+
+{
+  "name": "Peter",
+  "description": "This is a Peter description"
+}
+
+###
+GET http://localhost:3000/api/v1/books/4
+Content-Type: application/json
+
+{
+  "name": "Jason",
+  "description": "This is a jason description"
+}
+
+###
+GET http://localhost:3000/api/v1/books
+Content-Type: application/json
+
+{
+  "name": "Jason",
+  "description": "This is a jason description"
+}
+
+###
+GET http://localhost:3000/api/v1/books/2/authors
+Content-Type: application/json
+
+
+
+

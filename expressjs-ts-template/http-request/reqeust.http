@@ -1,0 +1,105 @@
+###
+GET http://localhost:3000/api/books/123/345?page=100
+
+
+###
+GET http://localhost:3000/error
+
+
+###
+GET http://localhost:3000/api/globalMiddleware/books/123/345?page=100
+
+###
+GET http://localhost:3000/api/middleware/books/123/345?page=100
+
+
+###
+GET http://localhost:3000/api/nextFunc/books/123/345?page=100
+
+
+###
+GET http://localhost:3000/api/books/123/345
+
+###
+GET http://localhost:3000/api/books/1/2?page=100
+Content-Type: application/json
+
+
+###
+
+
+
+###
+GET http://localhost:3000/ab23323cd
+###
+GET http://localhost:3000/abcd
+
+###
+POST http://localhost:3000/route
+###
+PUT http://localhost:3000/route
+###
+GET http://localhost:3000/route
+###
+PATCH http://localhost:3000/route
+
+### Request Name
+### Your comment
+# @name Another reqeust name
+GET http://localhost:3000/
+
+
+### Request Name
+GET http://localhost:3000/api/all
+###
+POST http://localhost:3000/api/all
+###
+PUT http://localhost:3000/api/all
+###
+PATCH http://localhost:3000/api/all
+
+
+
+
+### Request Name
+### Your comment
+# @name Another reqeust name
+POST http://localhost:3000/
+Content-Type: application/json
+
+{
+  "name": "Jason"
+}
+
+### Request Name
+### A basic request
+https://example.com/a/
+
+
+### A second request using the GET method
+https://example.com:8080/api/html/get?id=123&value=content
+
+### Using line breaks with indent
+GET http://example.com:8080
+    /api
+    /html
+    /get
+    ?id=123
+    &value=content
+
+### another example
+GET https://example.com:8080/api/get/html?
+    firstname=John&
+    lastname=Doe&
+    planet=Tatooine&
+    town=Freetown
+
+
+### Post Example
+POST https://ijhttp-examples.jetbrains.com/post
+Content-Type: application/x-www-form-urlencoded
+key1 = value1 &
+key2 = value2 &
+key3 = value3 &
+key4 = value4 &
+key5 = value5
