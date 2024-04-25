@@ -1,7 +1,7 @@
 {
-  "name": "e-commerce-service",
+  "name": "expressjs-ts-template",
   "version": "1.0.0",
-  "description":"",
+  "description":"This project can be a template for any express.js backend application",
   "main": "index.js",
   "author": "Jason Zhuang",
   "license": "MIT",
