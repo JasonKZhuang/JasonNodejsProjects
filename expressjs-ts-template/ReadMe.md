@@ -16,7 +16,7 @@
 ```shell
  mkdir your_app
  cd your_app
- npm init #package.json 
+ npm init -y #package.json 
 # or 
 yarn init
 ```
@@ -27,11 +27,13 @@ yarn init
 
 <details>
 
-## Install ts-node-dev and typescript dependency into devDependency
+## Install ts-node ts-node-dev and typescript dependency into devDependency
 
 ```shell
-npm i typescript -D
-npm i ts-node-dev -D 
+npm i typescript --save-dev
+npm i ts-node --save-dev
+npm i ts-node-dev --save-dev
+npm i @types/node -D
 ``` 
 
 ## Generate an initial typescript compile file tsconfig.ts
@@ -46,7 +48,6 @@ npx tsc --init
 
 ```shell
 npm i express 
-npm i @types/node -D
 npm i @types/express -D
 ```
 
@@ -69,7 +70,17 @@ npm i nodemon -D
 npm i pg
 ```
 
-## Install  Sequelize ORM
+## Prisma ORM
+### install the Prisma CLI as a development dependency 
+```shell
+npm install prisma --save-dev
+```
+### set up Prisma ORM with the init command of the Prisma CLI
+```shell
+npx prisma init --datasource-provider sqlite
+```
+
+## Sequelize ORM (I use it)
 
 - Sequelize is an easy-to-use and promise-based **Node.js ORM tool** for Postgres, MySQL, MariaDB, SQLite, DB2,
   Microsoft SQL Server, and Snowflake.

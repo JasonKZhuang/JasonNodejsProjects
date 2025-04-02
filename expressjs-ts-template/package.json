@@ -1,7 +1,7 @@
 {
   "name": "expressjs-ts-template",
   "version": "1.0.0",
-  "description":"This project can be a template for any express.js backend application",
+  "description": "This project can be a template for any express.js backend application",
   "main": "index.js",
   "author": "Jason Zhuang",
   "license": "MIT",
@@ -16,11 +16,14 @@
     "@types/express": "^4.17.21",
     "@types/node": "^20.12.7",
     "nodemon": "^3.1.0",
+    "prisma": "^5.13.0",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.4.5"
   },
   "dependencies": {
+    "@prisma/adapter-pg": "^5.13.0",
+    "@prisma/client": "^5.13.0",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "helmet": "^7.1.0",
